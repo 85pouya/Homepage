@@ -1,0 +1,251 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  background-position: 100px 50%; 
+  padding: 0;
+  color: #E5E8F9;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: url("https://i.gifer.com/embedded/download/NvL.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 250px; 
+  padding-top: 25px;
+  padding-bottom: -25px;
+  margin-top: 0rem;
+  text-align: center; 
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Lucida Handwriting, Times New Roman;
+  color: #b5f9b5;
+}
+
+.c-site-header {
+ margin-top: -13rem;
+ margin-bottom: 45px;
+ margin-left: 60px;
+}
+.c-site-header:hover {
+  transform: scale(1.01);
+  margin-left: 68px;
+  color: #50ff50;
+}
+
+.pouya-photo {
+  width:220px;
+  height:220px;
+  margin-bottom: 35px;
+  margin-top: 5px;
+  margin-left: 45px;
+  border-radius: 100%;
+  resize: none;
+  box-shadow: 0 0 20px 0px #50ff50;
+}
+.pouya-photo:hover{
+  transform: scale(1.02);
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  margin-top: -135px;
+  margin-bottom: 200px;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #40ff40;
+}
+
+.dropdown-content {
+  float: right;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #50ff50;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#capoeira, #selfdefense, #contact, #fitness{
+  background: #333;
+  margin: 20px;
+  padding: 2px;
+  padding-bottom: 1rem;
+}
+
+main {
+  font-family: Times New Roman, Arial, sans-serif;
+  font-size: 25px;
+  line-height: 35px;
+  font-style: oblique 10deg;
+  padding-left: 25px;
+  padding-right:8px;
+}
+p, h3{
+   font-family: Times New Roman, Arial, sans-serif;
+  font-size: 20px;
+  padding-left: 4rem;
+  margin-bottom:0;
+}
+
+a {
+  color: #757575;
+  font-weight: bolder;
+  font-family: Times New Roman, Arial, sans-serif;
+  font-size: 20px;
+  padding: 10px 0px 3px 62px;
+  
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 40px;
+  word-break: break-all;
+}
+
+.row,
+.row > .column {
+  padding: 3px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: #111;
+  box-shadow: 0 0 15px 0px #50ff50;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
+
+.c-site-footer {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 8px;
+  font-size: 1rem;
+  font-family: times roman;
+  position: relative;
+  display: block;
+  background: #333;
+}
+
+#pouya-page {
+ animation-name: coloring;
+ animation-duration: 3s;
+ animation-iteration-count: 1;
+}
+
+@keyframes coloring {
+  0% {
+    color: #f1f500;
+    opacity:100%;
+    left: 0%;
+  }
+  20%{
+    color: #f100f1;
+    opacity: 5%;
+  }
+  50% {
+    color: #50fff1;
+    left: 5%;
+    opacity: 100%;
+  }
+  70% {
+    opacity: 10%;
+    color: #b1e1b0;
+  }
+  90% {
+    opacity: 50%;
+  }
+  100% {
+    color: #3fff3f;
+    right: 10%;
+  }
+}
+
+.contact1 {
+  margin-left: -15rem;
+}
+
+.line {
+  background-color: #00ff50;
+  border-color: #50f960;
+}
+
+/* don't edit this */
+.jest-lite-report__status--pass {
+  background: var(--color-pass);
+}
+  
+.jest-lite-report__errors { display:none }
