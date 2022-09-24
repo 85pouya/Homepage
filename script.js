@@ -65,6 +65,13 @@ test("There are at least 500 words on the page", () => {
 });
 
 
+const console = document.getElementById("tests");
+prettify.toHTML(run(), console);
+
+
+
+
+
 var numbers;
 
 function getNumberOrString(value) {
@@ -91,6 +98,3 @@ document.getElementById('add_number').addEventListener('click', (event) => {
   element_total2.innerText = numbers.reduce((a,b) => a+b, 0);
 
 });
-
-const console = document.getElementById("tests");
-prettify.toHTML(run(), console);
