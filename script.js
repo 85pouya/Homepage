@@ -98,3 +98,23 @@ document.getElementById('add_number').addEventListener('click', (event) => {
   element_total2.innerText = numbers.reduce((a,b) => a+b, 0);
 
 });
+
+
+
+
+var fruits;
+
+
+fruits = ['banana', 'mango', 'pineapple'];
+
+
+document.getElementById('button').addEventListener('click', (event) => {
+  let element_list = document.getElementById('list');
+  if (!!fruits.length) {
+    let new_li = document.createElement('li');
+    new_li.innerText = fruits.shift();
+
+    element_list.appendChild(new_li);
+  }
+
+});
